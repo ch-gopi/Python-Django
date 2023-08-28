@@ -2,10 +2,33 @@
 {% extends "base.html"%}
 
 
-{% block title %}The Video page{% endblock %}
+{% block title %}{% endblock %}
 
 
 {% block content %}
-  
-
+<div class="jumbotron">
+  <h1 class="display"> Weather Forecast</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+  <p> Day-to-day conditions of the atmosphere at a place with respect to elements like humidity, temperature, wind speed, rainfall, etc</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+<div class="container">
+    <h1>Accuracy>99%</h1>
+     <div/>
+   
+<br/>
+{% if api %}
+    {% if api == "Error" %}
+       There was an error please try again
+    {% else %}
+        
+  		Location:{{ api.location  }}<br/>
+		
+  		Weather Now :{{ api.current }}<br/>
+  		
+  	{% endif  %}
+{% endif  %}
 {% endblock %}
