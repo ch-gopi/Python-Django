@@ -163,9 +163,27 @@ $ curl -X POST -d username=new -d email=new@example.com -d is_staff=false -H 'Ac
 Documentation & Support
 Full documentation for the project is available at https://www.django-rest-framework.org/.
 
-For questions and support, use the REST framework discussion group, or #restframework on libera.chat IRC.
+#
+Django is based on MVT (Model-View-Template) architecture. MVT is a software design pattern for developing a web application. 
 
-You may also want to follow the author on Twitter.
+MVT Structure has the following three parts – 
 
-Security
-Please see the security policy.
+Model: The model is going to act as the interface of your data. It is responsible for maintaining data. It is the logical data structure behind the entire application and is represented by a database (generally relational databases such as MySql, Postgres). 
+
+View: The View is the user interface — what you see in your browser when you render a website. It is represented by HTML/CSS/Javascript and Jinja files. 
+
+Template: A template consists of static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted. 
+
+ Project Structure :
+A Django Project when initialized contains basic files by default such as manage.py, view.py, etc. A simple project structure is enough to create a single-page application. Here are the major files and their explanations. Inside the site folder ( project folder ) there will be the following files- 
+
+manage.py- This file is used to interact with your project via the command line(start the server, sync the database… etc). For getting the full list of commands that can be executed by manage.py type this code in the command window- 
+$ python manage.py help
+
+ folder  – This folder contains all the packages of your project. Initially, it contains four files – 
+
+_init_.py – It is a python package. It is invoked when the package or a module in the package is imported. We usually use this to execute package initialization code, for example for the initialization of package-level data.
+settings.py – As the name indicates it contains all the website settings. In this file, we register any applications we create, the location of our static files, database configuration details, etc.
+urls.py – In this file, we store all links of the project and functions to call.
+wsgi.py – This file is used in deploying the project in WSGI. It is used to help your Django application communicate with the webserver.
+
