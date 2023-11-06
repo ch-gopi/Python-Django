@@ -183,7 +183,10 @@ $ python manage.py help
  folder  – This folder contains all the packages of your project. Initially, it contains four files – 
 
 _init_.py – It is a python package. It is invoked when the package or a module in the package is imported. We usually use this to execute package initialization code, for example for the initialization of package-level data.
+
 settings.py – As the name indicates it contains all the website settings. In this file, we register any applications we create, the location of our static files, database configuration details, etc.
+
 urls.py – In this file, we store all links of the project and functions to call.
+
 wsgi.py – This file is used in deploying the project in WSGI. It is used to help your Django application communicate with the webserver.
 
