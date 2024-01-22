@@ -21,14 +21,6 @@ Check out https://docs.djangoproject.com/en/dev/internals/contributing/ for info
 To run Django's test suite:
 
 Follow the instructions in the "Unit tests" section of docs/internals/contributing/writing-code/unit-tests.txt, published online at https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/unit-tests/#running-the-unit-tests
-Supporting the Development of Django
-Django's development depends on your contributions.
-
-If you depend on Django, remember to support the Django Software Foundation: https://www.djangoproject.com/fundraising/
-
-
-
-
 
 
 Django REST framework
@@ -43,9 +35,6 @@ REST framework is a collaboratively funded project. If you use REST framework co
 
 The initial aim is to provide a single full-time position on REST framework. Every single sign-up makes a significant impact towards making that possible.
 
-       
-
-Many thanks to all our wonderful sponsors, and in particular to our premium backers, Sentry, Stream, Spacinov, Retool, bit.io, PostHog, CryptAPI, and FEZTO.
 
 Overview
 Django REST framework is a powerful and flexible toolkit for building Web APIs.
@@ -57,11 +46,6 @@ Authentication policies including optional packages for OAuth1a and OAuth2.
 Serialization that supports both ORM and non-ORM data sources.
 Customizable all the way down - just use regular function-based views if you don't need the more powerful features.
 Extensive documentation, and great community support.
-There is a live example API for testing purposes, available here.
-
-Below: Screenshot from the browsable API
-
-Screenshot
 
 Requirements
 Python 3.6+
